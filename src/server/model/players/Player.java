@@ -2072,7 +2072,7 @@ if (isRunning()) {
 		}
 	
 	}
-	
+		
 	public int[] damageTaken = new int[Config.MAX_PLAYERS];
 	
 	public void handleHitMask(int damage) {
