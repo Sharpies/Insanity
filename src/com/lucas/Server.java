@@ -4,6 +4,7 @@ import java.text.DecimalFormat;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import com.lucas.engine.constants.MultithreadedConstants;
 import com.lucas.net.GameServerBootstrap;
 import com.lucas.packet.PacketRegistration;
 import com.lucas.rs2.pf.region.ObjectDef;
@@ -180,6 +181,7 @@ public final class Server {
 		}
 			
 		// start the multi threading engine here
+		MultithreadedConstants.startThreading();
 		
 		// finally start the netty bootstrap
 		new GameServerBootstrap().bind();
