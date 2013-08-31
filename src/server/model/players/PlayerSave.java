@@ -8,8 +8,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.logging.Logger;
 
-import com.lucas.Server;
-
 import server.util.Misc;
 
 public class PlayerSave {
@@ -34,7 +32,7 @@ public class PlayerSave {
 
 		try {
 			characterfile = new BufferedReader(new FileReader(
-					"./Data/characters/" + playerName + ".txt"));
+					"./data/characters/" + playerName + ".txt"));
 			File1 = true;
 		} catch (FileNotFoundException fileex1) {
 		}
@@ -289,7 +287,7 @@ public class PlayerSave {
 		BufferedWriter characterfile = null;
 		try {
 			characterfile = new BufferedWriter(new FileWriter(
-					"./Data/characters/" + p.playerName + ".txt"));
+					"./data/characters/" + p.playerName + ".txt"));
 
 			/* ACCOUNT */
 			characterfile.write("[ACCOUNT]", 0, 9);
