@@ -8,6 +8,7 @@ import org.jboss.netty.channel.Channel;
 
 import com.lucas.Server;
 import com.lucas.rs2.Config;
+import com.lucas.packet.IPacketMessageEncoder;
 import com.lucas.packet.PacketType;
 import com.lucas.packet.Packet;
 
@@ -799,4 +800,12 @@ public class Client extends Player {
 
 	}
 
+	/**
+	 * Writes an outgoing packet transmission.
+	 * @param message The packet to be written.
+	 */
+	public void writePacketMessage(IPacketMessageEncoder message) {
+		message.encodePacket(this);
+	}
+	
 }
