@@ -77,7 +77,7 @@ public final class PacketRegistration {
 				throws FileNotFoundException, IOException,
 				ClassNotFoundException {
 			BufferedReader fileReader = new BufferedReader(new FileReader(
-					"./Data/packets.txt"));
+					"./data/packets.txt"));
 			Map<Integer, Class> complexMap = new HashMap<Integer, Class>();
 			try {
 				String line = fileReader.readLine();
