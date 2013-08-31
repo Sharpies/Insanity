@@ -157,9 +157,11 @@ public final class Server {
 	}
 
 	/**
-	 * Starts the server.
+	 * 
+	 * @param args
+	 * @throws Exception
 	 */
-	public static void main(java.lang.String args[]) {
+	public static void main(java.lang.String args[]) throws Exception {
 		logger.info("Starting the server emulator up..");
 		ObjectDef.loadConfig();
 		Region.load();
